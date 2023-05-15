@@ -88,17 +88,13 @@ footer a {
 }
 
 .dark {
-  background: linear-gradient(
-    141deg,
-    rgb(63, 76, 119) 0%,
-    rgb(32, 38, 57) 100%
-  );
+  background: radial-gradient(rgb(39, 29, 60) 0.5px, rgb(16, 13, 24) 0.5px);
   background-repeat: no-repeat;
   color: var(--off-white);
 }
 
 .dark .container {
-  background: rgba(255, 253, 251, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .dark .theme-button {

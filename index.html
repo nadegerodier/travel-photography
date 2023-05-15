@@ -93,6 +93,28 @@
       .photo-gallery img:hover {
         transform: scale(1.5);
       }
+
+      .dark {
+        background: linear-gradient(
+          141deg,
+          rgb(63, 76, 119) 0%,
+          rgb(32, 38, 57) 100%
+        );
+        background-repeat: no-repeat;
+        color: #fffdfb;
+      }
+
+      .dark .container {
+        background: rgba(255, 253, 251, 0.1);
+      }
+
+      .dark .theme-button {
+        background: #2a363b;
+      }
+
+      .dark .theme-button:hover {
+        background: #f08570;
+      }
     </style>
   </head>
   <body>
@@ -150,5 +172,20 @@
         >Nadege Rodier</a
       >
     </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>

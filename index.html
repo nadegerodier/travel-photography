@@ -36,13 +36,8 @@
         font-size: 48px;
       }
 
-      img {
-        transition: all 150ms ease-in-out;
-        width: 300px;
-      }
-
-      img:hover {
-        transform: scale(1.5);
+      strong {
+        font-size: 18px;
       }
 
       footer {
@@ -81,6 +76,23 @@
         background: #2a363b;
         cursor: pointer;
       }
+
+      .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+        margin: 15px;
+      }
+
+      .photo-gallery img {
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        width: 100%;
+      }
+
+      .photo-gallery img:hover {
+        transform: scale(1.5);
+      }
     </style>
   </head>
   <body>
@@ -96,30 +108,33 @@
         One of my most memorable experiences was a volunteer trip to an animal
         sanctuary in South Africa. I will never forget the sound of the lions
         roaring in the middle of the night. Best of all was walking with the
-        elephants at the crack of dawn. <br />
-        <br />
-        <strong>Here are some of my favorite photographs:</strong>
+        elephants at the crack of dawn.
       </p>
-      <img src="/images/pic_1.JPG" alt="" />
-      <img src="/images/pic_2.JPG" alt="" />
-      <img src="/images/pic_3.JPG" alt="" />
-      <img src="/images/pic_4.JPG" alt="" />
-      <img src="/images/pic_5.JPG" alt="" />
-      <img src="/images/pic_6.JPG" alt="" />
-      <img src="/images/pic_7.JPG" alt="" />
-      <img src="/images/pic_8.JPG" alt="" />
-      <img src="/images/pic_9.JPG" alt="" />
-      <img src="/images/pic_10.JPG" alt="" />
-      <img src="/images/pic_11.JPG" alt="" />
-      <img src="/images/pic_12.JPG" alt="" />
-      <img src="/images/pic_13.JPG" alt="" />
-      <img src="/images/pic_14.JPG" alt="" />
-      <img src="/images/pic_15.JPG" alt="" />
-      <img src="/images/pic_16.JPG" alt="" />
-      <img src="/images/pic_17.JPG" alt="" />
-      <img src="/images/pic_18.JPG" alt="" />
-      <img src="/images/pic_19.JPG" alt="" />
-      <img src="/images/pic_20.JPG" alt="" />
+      <div class="mt-5 mb-4">
+        <strong>Here are some of my favorite photographs:</strong>
+      </div>
+      <div class="photo-gallery">
+        <img src="/images/pic_1.JPG" alt="" />
+        <img src="/images/pic_2.JPG" alt="" />
+        <img src="/images/pic_3.JPG" alt="" />
+        <img src="/images/pic_4.JPG" alt="" />
+        <img src="/images/pic_5.JPG" alt="" />
+        <img src="/images/pic_6.JPG" alt="" />
+        <img src="/images/pic_7.JPG" alt="" />
+        <img src="/images/pic_8.JPG" alt="" />
+        <img src="/images/pic_9.JPG" alt="" />
+        <img src="/images/pic_10.JPG" alt="" />
+        <img src="/images/pic_11.JPG" alt="" />
+        <img src="/images/pic_12.JPG" alt="" />
+        <img src="/images/pic_13.JPG" alt="" />
+        <img src="/images/pic_14.JPG" alt="" />
+        <img src="/images/pic_15.JPG" alt="" />
+        <img src="/images/pic_16.JPG" alt="" />
+        <img src="/images/pic_17.JPG" alt="" />
+        <img src="/images/pic_18.JPG" alt="" />
+        <img src="/images/pic_19.JPG" alt="" />
+        <img src="/images/pic_20.JPG" alt="" />
+      </div>
     </div>
 
     <footer>

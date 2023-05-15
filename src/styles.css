@@ -1,0 +1,110 @@
+:root {
+  --branding-color: #f08570;
+  --off-white: #fffdfb;
+  --off-black: #2a363b;
+}
+
+body {
+  background: linear-gradient(
+    147deg,
+    rgb(255, 236, 188) 0%,
+    rgb(248, 176, 142) 100%
+  );
+  background-repeat: no-repeat;
+  color: var(--off-black);
+  font-family: "Faustina", serif;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 48px;
+}
+
+p {
+  font-size: 18px;
+}
+
+h4 {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+}
+
+footer {
+  font-size: 18px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--off-white);
+  text-decoration: none;
+}
+
+.container {
+  background: var(--off-white);
+  margin: 40px auto 20px;
+  max-width: 1300px;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.container p {
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.theme-button {
+  background: var(--branding-color);
+  border: 1px solid var(--off-white);
+  border-radius: 6px;
+  color: var(--off-white);
+  display: block;
+  font-size: 18px;
+  margin: 40px auto;
+  padding: 10px 15px;
+  transition: all 150ms ease-in-out;
+}
+
+.theme-button:hover {
+  background: var(--off-black);
+  cursor: pointer;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  margin: 15px;
+}
+
+.photo-gallery img {
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+  width: 100%;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.5);
+}
+
+.dark {
+  background: linear-gradient(
+    141deg,
+    rgb(63, 76, 119) 0%,
+    rgb(32, 38, 57) 100%
+  );
+  background-repeat: no-repeat;
+  color: var(--off-white);
+}
+
+.dark .container {
+  background: rgba(255, 253, 251, 0.1);
+}
+
+.dark .theme-button {
+  background: var(--off-black);
+}
+
+.dark .theme-button:hover {
+  background: var(--branding-color);
+}

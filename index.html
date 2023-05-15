@@ -5,60 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Photography</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
-        margin: 100px;
+        background: linear-gradient(
+          147deg,
+          rgb(255, 236, 188) 0%,
+          rgb(248, 176, 142) 100%
+        );
+        background-repeat: no-repeat;
+        color: #2a363b;
+        font-family: "Roboto Slab", serif;
+        margin-bottom: 50px;
+      }
+
+      h1 {
+        font-size: 48px;
       }
 
       img {
-        width: 300px;
         transition: all 150ms ease-in-out;
+        width: 300px;
       }
 
       img:hover {
         transform: scale(1.5);
       }
+
+      footer {
+        text-align: center;
+      }
+
+      footer a {
+        color: #fffdfb;
+        text-decoration: none;
+      }
+
+      .container {
+        background: #fffdfb;
+        margin: 50px auto 20px;
+        max-width: 1300px;
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      .container p {
+        margin: 20px auto;
+        max-width: 1000px;
+      }
+
+      .theme-button {
+        background: #f08570;
+        border: 1px solid #fffdfb;
+        border-radius: 6px;
+        color: #fffdfb;
+        font-size: 16px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .theme-button:hover {
+        background: #2a363b;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
-    <button>Change theme</button>
-    <h1>Travel Photography</h1>
-    <p>
-      I've always enjoyed taking pictures, particularly when it comes to
-      capturing the beauty and diversity of nature. Photographing wildlife is a
-      thrilling experience that allows us to capture the majesty and grace of
-      animals in their natural habitats. Nature can't be staged. Each shot is
-      unique and good timing is essential. The opportunity to take a great
-      photograph may last only a moment. <br />
-      <br />
-      One of my most memorable experiences was a volunteer trip to an animal
-      sanctuary in South Africa. I will never forget the sound of the lions
-      roaring in the middle of the night. Best of all was walking with the
-      elephants at the crack of dawn. Every step they take feels like the ground
-      is shaking. Time stopped next to these gentle giants. <br />
-      <br />
-      Here are some of my favorite pictures:
-    </p>
-    <img src="/images/pic_1.JPG" alt="" />
-    <img src="/images/pic_2.JPG" alt="" />
-    <img src="/images/pic_3.JPG" alt="" />
-    <img src="/images/pic_4.JPG" alt="" />
-    <img src="/images/pic_5.JPG" alt="" />
-    <img src="/images/pic_6.JPG" alt="" />
-    <img src="/images/pic_7.JPG" alt="" />
-    <img src="/images/pic_8.JPG" alt="" />
-    <img src="/images/pic_9.JPG" alt="" />
-    <img src="/images/pic_10.JPG" alt="" />
-    <img src="/images/pic_11.JPG" alt="" />
-    <img src="/images/pic_12.JPG" alt="" />
-    <img src="/images/pic_13.JPG" alt="" />
-    <img src="/images/pic_14.JPG" alt="" />
-    <img src="/images/pic_15.JPG" alt="" />
-    <img src="/images/pic_16.JPG" alt="" />
-    <img src="/images/pic_17.JPG" alt="" />
-    <img src="/images/pic_18.JPG" alt="" />
-    <img src="/images/pic_19.JPG" alt="" />
-    <img src="/images/pic_20.JPG" alt="" />
+    <div class="container">
+      <button class="theme-button">Change theme</button>
+      <h1 class="mt-5">Travel Photography</h1>
+      <p>
+        I've always enjoyed taking pictures, particularly when it comes to
+        capturing the beauty and diversity of wildlife. Nature can't be staged.
+        Each shot is unique and good timing is essential. The opportunity to
+        take a great photograph may last only a moment. <br />
+        <br />
+        One of my most memorable experiences was a volunteer trip to an animal
+        sanctuary in South Africa. I will never forget the sound of the lions
+        roaring in the middle of the night. Best of all was walking with the
+        elephants at the crack of dawn. <br />
+        <br />
+        <strong>Here are some of my favorite photographs:</strong>
+      </p>
+      <img src="/images/pic_1.JPG" alt="" />
+      <img src="/images/pic_2.JPG" alt="" />
+      <img src="/images/pic_3.JPG" alt="" />
+      <img src="/images/pic_4.JPG" alt="" />
+      <img src="/images/pic_5.JPG" alt="" />
+      <img src="/images/pic_6.JPG" alt="" />
+      <img src="/images/pic_7.JPG" alt="" />
+      <img src="/images/pic_8.JPG" alt="" />
+      <img src="/images/pic_9.JPG" alt="" />
+      <img src="/images/pic_10.JPG" alt="" />
+      <img src="/images/pic_11.JPG" alt="" />
+      <img src="/images/pic_12.JPG" alt="" />
+      <img src="/images/pic_13.JPG" alt="" />
+      <img src="/images/pic_14.JPG" alt="" />
+      <img src="/images/pic_15.JPG" alt="" />
+      <img src="/images/pic_16.JPG" alt="" />
+      <img src="/images/pic_17.JPG" alt="" />
+      <img src="/images/pic_18.JPG" alt="" />
+      <img src="/images/pic_19.JPG" alt="" />
+      <img src="/images/pic_20.JPG" alt="" />
+    </div>
 
     <footer>
       <a

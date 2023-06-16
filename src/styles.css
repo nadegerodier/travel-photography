@@ -1,6 +1,6 @@
 :root {
   --branding-color: #f08570;
-  --off-white: #fffdfb;
+  --secondary-color: #fcf8f3;
   --off-black: #2a363b;
 }
 
@@ -35,13 +35,13 @@ h4 {
 }
 
 footer {
-  color: var(--off-white);
+  color: var(--secondary-color);
   font-size: 18px;
   text-align: center;
 }
 
 footer a {
-  color: var(--off-white);
+  color: var(--secondary-color);
   text-decoration: none;
   transition: all 150ms ease-in-out;
 }
@@ -51,7 +51,7 @@ footer a:hover {
 }
 
 .container {
-  background: var(--off-white);
+  background: var(--secondary-color);
   border-radius: 10px;
   display: block;
   margin: 40px auto 20px;
@@ -63,9 +63,9 @@ footer a:hover {
 
 .theme-button {
   background: var(--branding-color);
-  border: 1px solid var(--off-white);
+  border: 1px solid var(--secondary-color);
   border-radius: 6px;
-  color: var(--off-white);
+  color: var(--secondary-color);
   display: block;
   font-size: 18px;
   margin: 40px auto;
@@ -98,7 +98,7 @@ footer a:hover {
 .dark {
   background: radial-gradient(rgb(39, 29, 60) 0.5px, rgb(16, 13, 24) 0.5px);
   background-repeat: no-repeat;
-  color: var(--off-white);
+  color: var(--secondary-color);
 }
 
 .dark .container {

@@ -17,17 +17,21 @@ body {
 }
 
 h1 {
-  font-family: "Roboto Slab", serif;
+  font-family: "Nunito", sans-serif;
   font-size: 48px;
+  font-weight: 600;
 }
 
 p {
   font-size: 18px;
+  margin: 20px auto;
+  max-width: 1000px;
 }
 
 h4 {
-  font-family: "Roboto Slab", serif;
+  font-family: "Nunito", sans-serif;
   font-size: 20px;
+  font-weight: 700;
 }
 
 footer {
@@ -57,11 +61,6 @@ footer a:hover {
   width: 90%;
 }
 
-.container p {
-  margin: 20px auto;
-  max-width: 1000px;
-}
-
 .theme-button {
   background: var(--branding-color);
   border: 1px solid var(--off-white);
@@ -81,8 +80,8 @@ footer a:hover {
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
   margin: 15px;
 }
 
@@ -121,6 +120,11 @@ footer a:hover {
 
   p {
     font-size: 16px;
+    text-align: justify;
+  }
+
+  h4 {
+    font-size: 17px;
   }
 
   .container {
@@ -129,5 +133,9 @@ footer a:hover {
 
   .photo-gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    font-size: 16px;
   }
 }

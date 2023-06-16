@@ -42,10 +42,13 @@ footer a {
 
 .container {
   background: var(--off-white);
+  border-radius: 10px;
+  display: block;
   margin: 40px auto 20px;
   max-width: 1300px;
   padding: 50px 20px;
   text-align: center;
+  width: 90%;
 }
 
 .container p {
@@ -103,4 +106,22 @@ footer a {
 
 .dark .theme-button:hover {
   background: var(--branding-color);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 50px 20px 20px;
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

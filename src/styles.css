@@ -53,6 +53,7 @@ footer a:hover {
 .container {
   background: var(--secondary-color);
   border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: block;
   margin: 40px auto 20px;
   max-width: 1300px;

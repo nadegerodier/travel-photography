@@ -16,6 +16,18 @@ body {
   margin-bottom: 50px;
 }
 
+.container {
+  background: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: block;
+  margin: 40px auto 20px;
+  max-width: 1300px;
+  padding: 50px 20px;
+  text-align: center;
+  width: 90%;
+}
+
 h1 {
   font-family: "Nunito", sans-serif;
   font-size: 48px;
@@ -34,6 +46,23 @@ h4 {
   font-weight: 700;
 }
 
+.photo-gallery {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 15px;
+}
+
+.photo-gallery img {
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+  width: 100%;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.5);
+}
+
 footer {
   color: var(--secondary-color);
   font-size: 18px;
@@ -48,18 +77,6 @@ footer a {
 
 footer a:hover {
   color: var(--branding-color);
-}
-
-.container {
-  background: var(--secondary-color);
-  border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  display: block;
-  margin: 40px auto 20px;
-  max-width: 1300px;
-  padding: 50px 20px;
-  text-align: center;
-  width: 90%;
 }
 
 .theme-button {
@@ -77,23 +94,6 @@ footer a:hover {
 .theme-button:hover {
   background: var(--off-black);
   cursor: pointer;
-}
-
-.photo-gallery {
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 15px;
-}
-
-.photo-gallery img {
-  border-radius: 10px;
-  transition: all 200ms ease-in-out;
-  width: 100%;
-}
-
-.photo-gallery img:hover {
-  transform: scale(1.5);
 }
 
 .dark {
@@ -115,6 +115,10 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 50px 20px 20px;
+  }
+
   h1 {
     font-size: 40px;
   }
@@ -126,10 +130,6 @@ footer a:hover {
 
   h4 {
     font-size: 17px;
-  }
-
-  .container {
-    padding: 50px 20px 20px;
   }
 
   .photo-gallery {

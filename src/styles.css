@@ -114,6 +114,7 @@ footer a:hover {
 
 .dark .theme-button:hover {
   background: var(--branding-color);
+  border-color: var(--branding-color);
 }
 
 @media (max-width: 768px) {
